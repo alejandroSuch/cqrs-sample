@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: client-management-query-web
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true
+          auto-add-partitions: true
+          min-partition-count: 4
+      bindings:
+        clientEventStreamIn:
+          destination: clientEvents
+          contentType: application/json
+server:
+  port: 8081
+  error:
+    whitelabel:
+      enabled: false
+

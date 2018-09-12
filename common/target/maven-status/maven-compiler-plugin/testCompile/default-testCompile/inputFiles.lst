@@ -1,0 +1,6 @@
+/Volumes/SD/projects/cqrs/clientmanagement/common/src/test/java/com/veamospues/clientmanagement/domain/aggregate/ClientAggregateTest.java
+/Volumes/SD/projects/cqrs/clientmanagement/common/src/test/java/com/veamospues/clientmanagement/domain/command/executor/UpdateClientCommandExecutorTest.java
+/Volumes/SD/projects/cqrs/clientmanagement/common/src/test/java/com/veamospues/clientmanagement/domain/command/executor/DeleteClientCommandExecutorTest.java
+/Volumes/SD/projects/cqrs/clientmanagement/common/src/test/java/com/veamospues/clientmanagement/domain/command/executor/ClientCommandExecutorTest.java
+/Volumes/SD/projects/cqrs/clientmanagement/common/src/test/java/com/veamospues/clientmanagement/domain/command/executor/CreateClientCommandExecutorTest.java
+/Volumes/SD/projects/cqrs/clientmanagement/common/src/test/java/com/veamospues/clientmanagement/domain/aggregate/ClientAggregateRepositoryTest.java

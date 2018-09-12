@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: client-management-command-web
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true
+          auto-add-partitions: true
+          min-partition-count: 4
+      bindings:
+        clientEventStreamOut:
+          destination: clientEvents
+          contentType: application/json
+          producer:
+            partition-key-expression: headers['X-Partition-Key']
+            partition-count: ${spring.cloud.stream.kafka.binder.min-partition-count}
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+
+client-management-query-web-url: http://localhost:8081
